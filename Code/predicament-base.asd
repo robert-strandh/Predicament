@@ -10,4 +10,5 @@
   :depends-on (#:s-expression-syntax))
 
 (defparameter *string-designators*
-  '())
+  '(#:warning
+    #:serious-condition))
