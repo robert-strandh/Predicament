@@ -14,4 +14,6 @@
     #:serious-condition
     #:style-warning
     #:error
-    #:cell-error))
+    #:cell-error
+    #:cell-error-name
+    #:undefined-function))
