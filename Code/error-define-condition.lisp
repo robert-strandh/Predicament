@@ -1,9 +1,9 @@
 (cl:in-package #:predicament)
 
-(define-condition error (condition)
+(define-condition error (serious-condition)
   ())
 
-(setf (documentation 'warning 'type)
+(setf (documentation 'error 'type)
       (format nil
               "Class precedece list:~@
                error, serious-condition, condition, t~@
