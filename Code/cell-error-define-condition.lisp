@@ -1,7 +1,9 @@
 (cl:in-package #:predicament)
 
 (define-condition cell-error (error)
-  ())
+  ((%name
+    :initarg :name
+    :reader cell-error-name)))
 
 (setf (documentation 'cell-error 'type)
       (format nil
