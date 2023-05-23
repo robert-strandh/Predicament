@@ -11,4 +11,5 @@
 
 (defparameter *string-designators*
   '(#:warning
-    #:serious-condition))
+    #:serious-condition
+    #:style-warning))

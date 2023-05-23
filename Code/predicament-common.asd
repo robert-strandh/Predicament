@@ -2,4 +2,5 @@
   :serial t
   :components
   ((:file "warning-define-condition")
-   (:file "serious-condition-define-condition")))
+   (:file "serious-condition-define-condition")
+   (:file "style-warning-define-condition")))
