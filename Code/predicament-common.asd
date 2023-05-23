@@ -5,4 +5,5 @@
    (:file "serious-condition-define-condition")
    (:file "style-warning-define-condition")
    (:file "error-define-condition")
-   (:file "cell-error-define-condition")))
+   (:file "cell-error-define-condition")
+   (:file "undefined-function-define-condition")))
