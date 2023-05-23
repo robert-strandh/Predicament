@@ -13,4 +13,5 @@
   '(#:warning
     #:serious-condition
     #:style-warning
-    #:error))
+    #:error
+    #:cell-error))
