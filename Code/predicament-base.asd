@@ -17,6 +17,7 @@
     #:cell-error
     #:cell-error-name
     #:undefined-function
+    #:unbound-variable
     #:arithmetic-error
     #:arithmetic-error-operation
     #:arithmetic-error-operands))

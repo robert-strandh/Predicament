@@ -7,4 +7,5 @@
    (:file "error-define-condition")
    (:file "cell-error-define-condition")
    (:file "undefined-function-define-condition")
+   (:file "unbound-variable-define-condition")
    (:file "arithmetic-error-define-condition")))
