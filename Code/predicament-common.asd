@@ -11,4 +11,5 @@
    (:file "unbound-slot-define-condition")
    (:file "arithmetic-error-define-condition")
    (:file "division-by-zero-define-condition")
-   (:file "floating-point-inexact-define-condition")))
+   (:file "floating-point-inexact-define-condition")
+   (:file "floating-point-invalid-operation-define-condition")))

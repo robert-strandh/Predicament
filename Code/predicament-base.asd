@@ -24,4 +24,5 @@
     #:arithmetic-error-operation
     #:arithmetic-error-operands
     #:division-by-zero
-    #:floating-point-inexact))
+    #:floating-point-inexact
+    #:floating-point-invalid-operation))
