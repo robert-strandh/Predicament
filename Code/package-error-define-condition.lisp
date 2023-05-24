@@ -1,0 +1,18 @@
+(cl:in-package #:predicament)
+
+(define-condition package-error (error)
+  ((%package
+    :initarg :package
+    :reader package-error-package)))
+
+(setf (documentation 'package-error 'type)
+      (format nil
+              "Class precedence list:
+               package-error, error, serious-condition, condition, t~@
+               ~@
+               An instance of this condition class is signaled as~@
+               a result of an error occurring during an operation on~@
+               packages.  The :PACKAGE initarg can be used to indicate~@
+               the package or the package name involved in the error,~@
+               and this information can be read from the condition~@
+               instance using the function PACKAGE-ERROR-PACKAGE."))

@@ -29,4 +29,6 @@
     #:floating-point-overflow
     #:floating-point-underflow
     #:file-error
-    #:file-error-pathname))
+    #:file-error-pathname
+    #:package-error
+    #:package-error-package))
