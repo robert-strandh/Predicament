@@ -27,4 +27,6 @@
     #:floating-point-inexact
     #:floating-point-invalid-operation
     #:floating-point-overflow
-    #:floating-point-underflow))
+    #:floating-point-underflow
+    #:file-error
+    #:file-error-pathname))

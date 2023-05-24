@@ -14,4 +14,5 @@
    (:file "floating-point-inexact-define-condition")
    (:file "floating-point-invalid-operation-define-condition")
    (:file "floating-point-overflow-define-condition")
-   (:file "floating-point-underflow-define-condition")))
+   (:file "floating-point-underflow-define-condition")
+   (:file "file-error-define-condition")))
