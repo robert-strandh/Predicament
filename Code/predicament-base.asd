@@ -26,4 +26,5 @@
     #:division-by-zero
     #:floating-point-inexact
     #:floating-point-invalid-operation
-    #:floating-point-overflow))
+    #:floating-point-overflow
+    #:floating-point-underflow))
