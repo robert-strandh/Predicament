@@ -16,4 +16,7 @@
     #:error
     #:cell-error
     #:cell-error-name
-    #:undefined-function))
+    #:undefined-function
+    #:arithmetic-error
+    #:arithmetic-error-operation
+    #:arithmetic-error-operands))

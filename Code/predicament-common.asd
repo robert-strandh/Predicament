@@ -6,4 +6,5 @@
    (:file "style-warning-define-condition")
    (:file "error-define-condition")
    (:file "cell-error-define-condition")
-   (:file "undefined-function-define-condition")))
+   (:file "undefined-function-define-condition")
+   (:file "arithmetic-error-define-condition")))
