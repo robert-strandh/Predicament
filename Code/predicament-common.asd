@@ -9,4 +9,5 @@
    (:file "undefined-function-define-condition")
    (:file "unbound-variable-define-condition")
    (:file "unbound-slot-define-condition")
-   (:file "arithmetic-error-define-condition")))
+   (:file "arithmetic-error-define-condition")
+   (:file "division-by-zero-define-condition")))

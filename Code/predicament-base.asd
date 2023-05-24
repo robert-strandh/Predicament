@@ -22,4 +22,5 @@
     #:unbound-slot-instance
     #:arithmetic-error
     #:arithmetic-error-operation
-    #:arithmetic-error-operands))
+    #:arithmetic-error-operands
+    #:division-by-zero))
