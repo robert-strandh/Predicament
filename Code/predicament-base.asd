@@ -18,6 +18,8 @@
     #:cell-error-name
     #:undefined-function
     #:unbound-variable
+    #:unbound-slot
+    #:unbound-slot-instance
     #:arithmetic-error
     #:arithmetic-error-operation
     #:arithmetic-error-operands))
