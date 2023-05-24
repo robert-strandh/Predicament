@@ -1,7 +1,13 @@
 (cl:in-package #:predicament)
 
 (define-condition undefined-function (cell-error)
-  ())
+  ()
+  (:report (lambda (condition stream)
+             (format stream
+                     "Attempt to access the definition of the~@
+                      function named ~s~@
+                      but no function with that name is defined."
+                     (cell-error-name condition)))))
 
 (setf (documentation 'undefined-function 'type)
       (format nil
