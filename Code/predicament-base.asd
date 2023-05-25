@@ -32,4 +32,6 @@
     #:file-error-pathname
     #:package-error
     #:package-error-package
-    #:parse-error))
+    #:parse-error
+    #:print-not-readable
+    #:print-not-readable-object))

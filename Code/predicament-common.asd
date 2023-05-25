@@ -17,4 +17,5 @@
    (:file "floating-point-underflow-define-condition")
    (:file "file-error-define-condition")
    (:file "package-error-define-condition")
-   (:file "parse-error-define-condition")))
+   (:file "parse-error-define-condition")
+   (:file "print-not-readable-define-condition")))
