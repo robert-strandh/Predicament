@@ -22,4 +22,5 @@
    (:file "program-error-define-condition")
    (:file "reader-error-define-condition")
    (:file "simple-condition-define-condition")
-   (:file "simple-error-define-condition")))
+   (:file "simple-error-define-condition")
+   (:file "type-error-define-condition")))

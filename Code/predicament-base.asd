@@ -40,4 +40,7 @@
     #:simple-condition
     #:simple-condition-format-control
     #:simple-condition-format-arguments
-    #:simple-error))
+    #:simple-error
+    #:type-error
+    #:type-error-datum
+    #:type-error-expected-type))
