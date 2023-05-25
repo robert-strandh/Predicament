@@ -20,4 +20,5 @@
    (:file "parse-error-define-condition")
    (:file "print-not-readable-define-condition")
    (:file "program-error-define-condition")
-   (:file "reader-error-define-condition")))
+   (:file "reader-error-define-condition")
+   (:file "simple-condition-define-condition")))

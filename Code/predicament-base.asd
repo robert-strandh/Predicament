@@ -36,4 +36,7 @@
     #:print-not-readable
     #:print-not-readable-object
     #:program-error
-    #:reader-error))
+    #:reader-error
+    #:simple-condition
+    #:simple-condition-format-control
+    #:simple-condition-format-arguments))
