@@ -31,4 +31,5 @@
     #:file-error
     #:file-error-pathname
     #:package-error
-    #:package-error-package))
+    #:package-error-package
+    #:parse-error))
