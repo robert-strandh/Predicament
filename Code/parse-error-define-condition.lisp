@@ -1,7 +1,10 @@
 (cl:in-package #:predicament)
 
 (define-condition parse-error (error)
-  ())
+  ()
+  (:report (lambda (condition stream)
+             (declare (ignore condition))
+             (format stream "A parse error has occurred."))))
 
 (setf (documentation 'parse-error 'type)
       (format nil

@@ -3,7 +3,13 @@
 (define-condition file-error (error)
   ((%pathname
     :initarg :pathname
-    :reader file-error-pathname)))
+    :reader file-error-pathname))
+  (:report (lambda (condition stream)
+             (format stream
+                     "An error has occurred as a result of an~@
+                      operation on the file:~@
+                      ~s."
+                     (file-error-pathname condition)))))
 
 (setf (documentation 'file-error 'type)
       (format nil

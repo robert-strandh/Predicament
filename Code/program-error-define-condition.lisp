@@ -1,7 +1,11 @@
 (cl:in-package #:predicament)
 
 (define-condition program-error (error)
-  ())
+  ()
+  (:report (lambda (condition stream)
+             (declare (ignore condition))
+             (format stream
+                     "Incorrect program syntax was detected."))))
 
 (setf (documentation 'program-error 'type)
       (format nil

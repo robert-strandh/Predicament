@@ -1,7 +1,10 @@
 (cl:in-package #:predicament)
 
 (define-condition error (serious-condition)
-  ())
+  ()
+  (:report (lambda (condition stream)
+             (declare (ignore condition))
+             (format stream "An error has occurred."))))
 
 (setf (documentation 'error 'type)
       (format nil

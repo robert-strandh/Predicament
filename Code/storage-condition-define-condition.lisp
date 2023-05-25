@@ -1,7 +1,11 @@
 (cl:in-package #:predicament)
 
 (define-condition storage-condition (serious-condition)
-  ())
+  ()
+  (:report (lambda (condition stream)
+             (declare (ignore condition))
+             (format stream
+                     "An error related to memory management has occurred."))))
 
 (setf (documentation 'storage-condition 'type)
       (format nil

@@ -3,7 +3,13 @@
 (define-condition package-error (error)
   ((%package
     :initarg :package
-    :reader package-error-package)))
+    :reader package-error-package))
+  (:report (lambda (condition stream)
+             (format stream
+                     "An error has occurred as a result of an operation~@
+                      involving the following package:~@
+                      ~s."
+                     (package-error-package condition)))))
 
 (setf (documentation 'package-error 'type)
       (format nil

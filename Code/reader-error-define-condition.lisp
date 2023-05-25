@@ -1,7 +1,11 @@
 (cl:in-package #:predicament)
 
 (define-condition reader-error (error)
-  ())
+  ()
+  (:report (lambda (condition stream)
+             (declare (ignore condition))
+             (format stream
+                     "An error occurred during a READ operation."))))
 
 (setf (documentation 'reader-error 'type)
       (format nil
