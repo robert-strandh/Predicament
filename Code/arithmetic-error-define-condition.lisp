@@ -6,7 +6,16 @@
     :reader arithmetic-error-operation)
    (%operands
     :initarg :operands
-    :reader arithmetic-error-operands)))
+    :reader arithmetic-error-operands))
+  (:report (lambda (condition stream)
+             (format stream
+                     "An arithemetic error has occurred as a result~@
+                      of invoking the operation:~@
+                      ~s~@
+                      with the arguments:~@
+                      ~s."
+                     (arithmetic-error-operation condition)
+                     (arithmetic-error-operands condition)))))
 
 (setf (documentation 'arithmetic-error 'type)
       (format nil
