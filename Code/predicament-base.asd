@@ -43,4 +43,5 @@
     #:simple-error
     #:type-error
     #:type-error-datum
-    #:type-error-expected-type))
+    #:type-error-expected-type
+    #:simple-type-error))
