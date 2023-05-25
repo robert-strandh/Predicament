@@ -39,4 +39,5 @@
     #:reader-error
     #:simple-condition
     #:simple-condition-format-control
-    #:simple-condition-format-arguments))
+    #:simple-condition-format-arguments
+    #:simple-error))
