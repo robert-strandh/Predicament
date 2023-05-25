@@ -46,4 +46,6 @@
     #:type-error-expected-type
     #:simple-type-error
     #:simple-warning
-    #:storage-condition))
+    #:storage-condition
+    #:stream-error
+    #:stream-error-stream))
