@@ -25,4 +25,5 @@
    (:file "simple-error-define-condition")
    (:file "type-error-define-condition")
    (:file "simple-type-error-define-condition")
-   (:file "simple-warning-define-condition")))
+   (:file "simple-warning-define-condition")
+   (:file "storage-condition-define-condition")))
