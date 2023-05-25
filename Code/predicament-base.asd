@@ -34,4 +34,5 @@
     #:package-error-package
     #:parse-error
     #:print-not-readable
-    #:print-not-readable-object))
+    #:print-not-readable-object
+    #:program-error))
