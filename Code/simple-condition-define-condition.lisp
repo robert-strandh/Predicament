@@ -20,5 +20,11 @@
                ~@
                An instance of this condition class is created when a~@
                condition-signaling function is invoked with a format~@
-               control as its first argument."))
-   
+               control as its first argument.  The format control can~@
+               be supplied to MAKE-CONDITION by using the :FORMAT-CONTROL~@
+               initarg, and this information can be read from the condition~@
+               instance using the function SIMPLE-CONDITION-FORMAT-CONTROL.~@
+               The format arguments can be supplied to MAKE-CONDITION by~@
+               using the :FORMAT-ARGUMENTS initarg, and this information~@
+               can be read from the condition instance by using the~@
+               function SIMPLE-CONDITION-FORMAT-ARGUMENTS."))
