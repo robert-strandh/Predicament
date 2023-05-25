@@ -48,4 +48,5 @@
     #:simple-warning
     #:storage-condition
     #:stream-error
-    #:stream-error-stream))
+    #:stream-error-stream
+    #:end-of-file))
