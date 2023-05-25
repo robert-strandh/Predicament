@@ -1,7 +1,8 @@
 (asdf:defsystem #:predicament-common
   :serial t
   :components
-  ((:file "warning-define-condition")
+  ((:file "with-simple-restart-defmacro")
+   (:file "warning-define-condition")
    (:file "serious-condition-define-condition")
    (:file "style-warning-define-condition")
    (:file "error-define-condition")

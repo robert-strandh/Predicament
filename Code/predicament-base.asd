@@ -10,7 +10,8 @@
   :depends-on (#:s-expression-syntax))
 
 (defparameter *string-designators*
-  '(#:warning
+  '(#:with-simple-restart
+    #:warning
     #:serious-condition
     #:style-warning
     #:error
