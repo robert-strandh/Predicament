@@ -15,7 +15,10 @@
 
 (setf (documentation 'print-not-readable 'function)
       (format nil
-              "An instane of this class can be signaled when an~@
+              "Class precedence list:~@
+               print-not-readable, error, serious-condition, condition, t~@
+               ~@
+               An instane of this class can be signaled when an~@
                attempt is made to print an object readable (i.e.,~@
                when *PRINT-READABLY* is true), but the object can not~@
                be printed in a way that it can then be read back using~@
