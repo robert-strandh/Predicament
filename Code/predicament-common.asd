@@ -24,4 +24,5 @@
    (:file "simple-condition-define-condition")
    (:file "simple-error-define-condition")
    (:file "type-error-define-condition")
-   (:file "simple-type-error-define-condition")))
+   (:file "simple-type-error-define-condition")
+   (:file "simple-warning-define-condition")))
