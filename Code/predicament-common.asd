@@ -19,4 +19,5 @@
    (:file "package-error-define-condition")
    (:file "parse-error-define-condition")
    (:file "print-not-readable-define-condition")
-   (:file "program-error-define-condition")))
+   (:file "program-error-define-condition")
+   (:file "reader-error-define-condition")))

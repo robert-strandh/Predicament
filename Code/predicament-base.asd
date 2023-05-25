@@ -35,4 +35,5 @@
     #:parse-error
     #:print-not-readable
     #:print-not-readable-object
-    #:program-error))
+    #:program-error
+    #:reader-error))
