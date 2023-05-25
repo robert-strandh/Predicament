@@ -28,4 +28,5 @@
    (:file "simple-warning-define-condition")
    (:file "storage-condition-define-condition")
    (:file "stream-error-define-condition")
-   (:file "end-of-file-define-condition")))
+   (:file "end-of-file-define-condition")
+   (:file "control-error-define-condition")))

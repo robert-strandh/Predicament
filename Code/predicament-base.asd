@@ -49,4 +49,5 @@
     #:storage-condition
     #:stream-error
     #:stream-error-stream
-    #:end-of-file))
+    #:end-of-file
+    #:control-error))
