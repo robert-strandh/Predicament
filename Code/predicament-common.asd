@@ -1,7 +1,8 @@
 (asdf:defsystem #:predicament-common
   :serial t
   :components
-  ((:file "handler-clusters-defparameter")
+  ((:file "break-on-signals-defparameter")
+   (:file "handler-clusters-defparameter")
    (:file "with-simple-restart-defmacro")
    (:file "warning-define-condition")
    (:file "serious-condition-define-condition")

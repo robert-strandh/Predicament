@@ -11,6 +11,7 @@
 
 (defparameter *string-designators*
   '(#:with-simple-restart
+    #:*break-on-signals*
     #:warning
     #:serious-condition
     #:style-warning
