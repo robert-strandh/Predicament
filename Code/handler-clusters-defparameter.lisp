@@ -5,7 +5,7 @@
 (setf (documentation '*handler-clusters* 'variable)
       (format nil
               "The value of this variable is a list of \"handler clusters\".~@
-               A handler cluster is in turn a list of \"handler pairs\".@
+               A handler cluster in turn is a list of \"handler pairs\".~@
                A handler pair is a CONS cell where the CAR is a type~@
                specifier and the CDR is a condition handler.  The type~@
                specifier is used by SIGNAL to determine whether the~@
