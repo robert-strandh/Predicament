@@ -2,6 +2,7 @@
   :serial t
   :components
   ((:file "break-on-signals-defparameter")
+   (:file "debugger-hook-defparameter")
    (:file "handler-clusters-defparameter")
    (:file "with-simple-restart-defmacro")
    (:file "warning-define-condition")
