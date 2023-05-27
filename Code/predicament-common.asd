@@ -41,4 +41,5 @@
    (:file "storage-condition-define-condition")
    (:file "stream-error-define-condition")
    (:file "end-of-file-define-condition")
-   (:file "control-error-define-condition")))
+   (:file "control-error-define-condition")
+   (:file "error-defmethods")))
