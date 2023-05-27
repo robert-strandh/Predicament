@@ -4,6 +4,7 @@
   ((:file "break-on-signals-defparameter")
    (:file "debugger-hook-defparameter")
    (:file "default-debugger-defvar")
+   (:file "invoke-debugger-defun")
    (:file "handler-clusters-defparameter")
    (:file "with-simple-restart-defmacro")
    (:file "warning-define-condition")

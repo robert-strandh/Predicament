@@ -13,6 +13,7 @@
   '(#:with-simple-restart
     #:*break-on-signals*
     #:*debugger-hook*
+    #:invoke-debugger
     #:warning
     #:serious-condition
     #:style-warning
