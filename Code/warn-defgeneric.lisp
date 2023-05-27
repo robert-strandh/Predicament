@@ -15,6 +15,11 @@
                transfer of control), then WARN reports the condition~@
                to *ERROR-OUTPUT*.  Finally, WARN returns NIL.~@
                ~@
+               If the denoted condition is not of type WARNING,~@
+               then an error of type TYPE-ERROR is signaled.~@
+               If DATUM is a condition, and ARGUMENTS is non-NIL,~@
+               then an error of type TYPE-ERROR is signaled.~@
+               ~@
                If the value of DATUM is a condition, then the denoted~@
                condition is that value.  In that case, if ARGUMENTS is~@
                not the empty list, an warn of type TYPE-WARN is signaled.~@
