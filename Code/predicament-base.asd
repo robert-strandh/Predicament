@@ -16,6 +16,7 @@
     #:make-condition
     #:invoke-debugger
     #:signal
+    #:warn
     #:warning
     #:serious-condition
     #:style-warning

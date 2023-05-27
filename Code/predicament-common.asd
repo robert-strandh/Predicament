@@ -7,6 +7,7 @@
    (:file "condition-maker-defvar")
    (:file "signal-defgeneric")
    (:file "error-defgeneric")
+   (:file "warn-defgeneric")
    (:file "make-condition-defun")
    (:file "coerce-to-condition-defgeneric-defmethods")
    (:file "invoke-debugger-defun")
