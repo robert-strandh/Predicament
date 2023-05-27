@@ -9,4 +9,8 @@
                returns a condition instance according to the type and~@
                the slot-initializations given to MAKE-CONDITION.  We~@
                use this indirection because the library can not impose~@
-               a particular way of making conditions."))
+               a particular way of making conditions.~@
+               ~@
+               The function check that the condition type (the first~@
+               argument) is indeed the name of a condition class, and~@
+               if that is not the case, it should signal an error."))
