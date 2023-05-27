@@ -5,6 +5,7 @@
    (:file "debugger-hook-defparameter")
    (:file "default-debugger-defvar")
    (:file "condition-maker-defvar")
+   (:file "make-condition-defun")
    (:file "invoke-debugger-defun")
    (:file "handler-clusters-defparameter")
    (:file "with-simple-restart-defmacro")
