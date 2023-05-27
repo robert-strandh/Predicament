@@ -6,6 +6,7 @@
    (:file "default-debugger-defvar")
    (:file "condition-maker-defvar")
    (:file "make-condition-defun")
+   (:file "coerce-to-condition-defgeneric-defmethods")
    (:file "invoke-debugger-defun")
    (:file "handler-clusters-defparameter")
    (:file "with-simple-restart-defmacro")
