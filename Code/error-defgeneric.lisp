@@ -30,4 +30,3 @@
                is a condition of type SIMPLE-ERROR created by calling~@
                MAKE-CONDITION with the symbol SIMPLE-ERROR and with~@
                :FORMAT-CONTROL DATUM and :FORMAT-ARGUMENTS ARGUMENTS."))
-             
