@@ -5,6 +5,7 @@
    (:file "debugger-hook-defparameter")
    (:file "default-debugger-defvar")
    (:file "condition-maker-defvar")
+   (:file "signal-defgeneric")
    (:file "error-defgeneric")
    (:file "make-condition-defun")
    (:file "coerce-to-condition-defgeneric-defmethods")

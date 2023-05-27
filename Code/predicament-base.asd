@@ -15,6 +15,7 @@
     #:*debugger-hook*
     #:make-condition
     #:invoke-debugger
+    #:signal
     #:warning
     #:serious-condition
     #:style-warning
