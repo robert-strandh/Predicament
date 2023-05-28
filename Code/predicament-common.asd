@@ -42,4 +42,5 @@
    (:file "stream-error-define-condition")
    (:file "end-of-file-define-condition")
    (:file "control-error-define-condition")
-   (:file "error-defmethods")))
+   (:file "error-defmethods")
+   (:file "warn-defmethods")))
