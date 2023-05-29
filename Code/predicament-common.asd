@@ -9,7 +9,6 @@
    (:file "error-defgeneric")
    (:file "warn-defgeneric")
    (:file "make-condition-defun")
-   (:file "coerce-to-condition-defgeneric-defmethods")
    (:file "invoke-debugger-defun")
    (:file "handler-clusters-defparameter")
    (:file "with-simple-restart-defmacro")
