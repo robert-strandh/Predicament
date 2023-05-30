@@ -7,6 +7,8 @@
    (:file "condition-maker-defvar")
    (:file "active-restarts-defparameter")
    (:file "condition-restarts-defparameter")
+   (:file "restart-defclass")
+   (:file "find-restart-defun")
    (:file "signal-defgeneric")
    (:file "error-defgeneric")
    (:file "warn-defgeneric")

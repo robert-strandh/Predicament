@@ -14,6 +14,8 @@
   '(#:with-simple-restart
     #:*break-on-signals*
     #:*debugger-hook*
+    #:restart
+    #:find-restart
     #:handler-bind
     #:make-condition
     #:invoke-debugger
