@@ -5,7 +5,7 @@
    (:file "debugger-hook-defparameter")
    (:file "default-debugger-defvar")
    (:file "condition-maker-defvar")
-   (:file "active-restarts-defparameter")
+   (:file "restart-clusters-defparameter")
    (:file "condition-restarts-defparameter")
    (:file "restart-defclass")
    (:file "find-restart-defun")
