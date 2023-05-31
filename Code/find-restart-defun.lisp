@@ -7,9 +7,11 @@
               (loop for (restart . conditions) in *condition-restarts*
                     unless (member condition conditions)
                       collect restart))))
-    (loop for restart in *active-restarts*
-          when (and (or (eq identifier restart)
-                        (eq identifier (name restart)))
-                    (not (member restart excluded-restarts)))
-            return restart
+    (loop for restart-cluster in *restart-clusters*
+          do (loop for restart in restart-cluster
+                   when (and (or (eq identifier restart)
+                                 (eq identifier (name restart)))
+                             (not (member restart excluded-restarts))
+                             (funcall (test-function restart) condition))
+                     do (return-from find-restart restart))
           finally (return nil))))
