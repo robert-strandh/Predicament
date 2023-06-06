@@ -15,6 +15,7 @@
     #:*break-on-signals*
     #:*debugger-hook*
     #:restart
+    #:restart-name
     #:find-restart
     #:handler-bind
     #:make-condition
