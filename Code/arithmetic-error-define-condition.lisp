@@ -33,3 +33,35 @@
                can be read from the instance using the function named~@
                ARITHMETIC-ERROR-OPERATION, and the operands can be read~@
                using the function named ARITHMETIC-ERROR-OPERANDS."))
+
+(setf (documentation 'arithmetic-error-operation 'function)
+      (format nil
+              "Syntax: arithmetic-error-operation arithmetic-error~@
+               ~@
+               This function returns the information supplied by~@
+               the initarg :OPERATION to MAKE-CONDITION when the~@
+               condition type to be instantiated is (a subclass of)~@
+               ARITHMETIC-ERROR.~@
+               ~@
+               Normally, this function should return the name of the~@
+               operation that was attempted when the error was signaled.~@
+               However, instances of subclasses of ARITHMETIC-ERROR~@
+               can be created by arbitrary use code, and the only guarantee~@
+               is that this function returns the values supplied by~@
+               the initarg :OPERATION when the class was instantiated."))
+
+(setf (documentation 'arithmetic-error-operands 'function)
+      (format nil
+              "Syntax: arithmetic-error-operands arithmetic-error~@
+               ~@
+               This function returns the information supplied by~@
+               the initarg :OPERANDS to MAKE-CONDITION when the~@
+               condition type to be instantiated is (a subclass of)~@
+               ARITHMETIC-ERROR.~@
+               ~@
+               Normally, this function should return a list of the~@
+               operands to the operation when the error was signaled.~@
+               However, instances of subclasses of ARITHMETIC-ERROR~@
+               can be created by arbitrary use code, and the only guarantee~@
+               is that this function returns the values supplied by~@
+               the initarg :OPERANDS when the class was instantiated."))
