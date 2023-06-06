@@ -28,3 +28,20 @@
                the :OBJECT initarg to MAKE-CONDITIOIN, and the function~@
                named PRINT-NOT-READABLE-OBJECT can be used in ordder to~@
                read the object from the condition instance."))
+
+(setf (documentation 'print-not-readable-object 'function)
+      (format nil
+              "Syntax print-not-readable-object print-not-readable~@
+               ~@
+               This function returns the information supplied by the~@
+               initarg :OBJECT to MAKE-CONDITION when the condition type~@
+               to be instantiated is (a subclass of) PRINT-NOT-READABLE.~@
+               ~@
+               Normally, this function should return the object that,~@
+               when an attempts to write a printed representation of that~@
+               object with *PRINT-READABLY* being true, that representation~@
+               would not be read back correctly by READ.  However, instances~@
+               of PRINT-NOT-READABLE can be created by arbitrary use code,~@
+               and the only guarantee is that this function returns the~@
+               value supplied by the initarg :OBJECT when the class was~@
+               instantiated."))
