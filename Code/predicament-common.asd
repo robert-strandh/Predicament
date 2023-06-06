@@ -48,4 +48,6 @@
    (:file "control-error-define-condition")
    (:file "signal-defmethods")
    (:file "error-defmethods")
-   (:file "warn-defmethods")))
+   (:file "warn-defmethods")
+   (:file "abort-defun")
+   (:file "muffle-warning-defun")))

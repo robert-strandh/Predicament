@@ -62,4 +62,6 @@
     #:stream-error
     #:stream-error-stream
     #:end-of-file
-    #:control-error))
+    #:control-error
+    #:abort
+    #:muffle-warning))
