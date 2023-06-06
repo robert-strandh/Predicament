@@ -51,4 +51,6 @@
    (:file "warn-defmethods")
    (:file "abort-defun")
    (:file "muffle-warning-defun")
-   (:file "continue-defun")))
+   (:file "continue-defun")
+   (:file "store-value-defun")
+   (:file "use-value-defun")))

@@ -65,4 +65,6 @@
     #:control-error
     #:abort
     #:muffle-warning
-    #:continue))
+    #:continue
+    #:store-value
+    #:use-value))
