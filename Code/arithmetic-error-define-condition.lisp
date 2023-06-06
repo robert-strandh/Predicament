@@ -47,7 +47,7 @@
                operation that was attempted when the error was signaled.~@
                However, instances of subclasses of ARITHMETIC-ERROR~@
                can be created by arbitrary use code, and the only guarantee~@
-               is that this function returns the values supplied by~@
+               is that this function returns the value supplied by~@
                the initarg :OPERATION when the class was instantiated."))
 
 (setf (documentation 'arithmetic-error-operands 'function)
@@ -63,5 +63,5 @@
                operands to the operation when the error was signaled.~@
                However, instances of subclasses of ARITHMETIC-ERROR~@
                can be created by arbitrary use code, and the only guarantee~@
-               is that this function returns the values supplied by~@
+               is that this function returns the value supplied by~@
                the initarg :OPERANDS when the class was instantiated."))

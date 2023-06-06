@@ -37,5 +37,5 @@
                ~@
                However, instances of subclasses of CELL-ERROR can be~@
                created by arbitrary use code, and the only guarantee~@
-               is that this function returns the values supplied by~@
+               is that this function returns the value supplied by~@
                the initarg :NAME when the class was instantiated."))
