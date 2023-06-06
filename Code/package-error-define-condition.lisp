@@ -24,3 +24,21 @@
                the package or the package name involved in the error,~@
                and this information can be read from the condition~@
                instance using the function PACKAGE-ERROR-PACKAGE."))
+
+(setf (documentation 'package-error-package 'function)
+      (format nil
+              "Syntax package-error-package package-error~@
+               ~@
+               This function returns the information supplied by the~@
+               initarg :PACKAGE to MAKE-CONDITION when the condition~@
+               type to be instantiated is (a subclass of) PACKAGE-ERROR.~@
+               ~@
+               ~@
+               Normally, this function should return a designator for~@
+               the offending package involved in the operation that~@
+               signaled the error.  However, instances of subclasses~@
+               of PACKAGE-ERROR can be created by arbitrary use code,~@
+               and the only guarantee is that this function returns the~@
+               value supplied by the initarg :PACKAGE when the class was~@
+               instantiated."))
+
