@@ -64,4 +64,5 @@
     #:end-of-file
     #:control-error
     #:abort
-    #:muffle-warning))
+    #:muffle-warning
+    #:continue))

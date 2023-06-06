@@ -50,4 +50,5 @@
    (:file "error-defmethods")
    (:file "warn-defmethods")
    (:file "abort-defun")
-   (:file "muffle-warning-defun")))
+   (:file "muffle-warning-defun")
+   (:file "continue-defun")))
