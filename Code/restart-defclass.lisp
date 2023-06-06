@@ -1,9 +1,11 @@
 (cl:in-package #:predicament)
 
+(defgeneric restart-name (restart))
+
 (defclass restart ()
   ((%name
     :initarg :name
-    :reader name)
+    :reader restart-name)
    (%action
     :initarg :action
     :reader action)

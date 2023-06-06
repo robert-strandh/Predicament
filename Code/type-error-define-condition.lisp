@@ -1,5 +1,9 @@
 (cl:in-package #:predicament)
 
+(defgeneric type-error-datum (type-error))
+
+(defgeneric type-error-expected-type (type-error))
+
 (define-condition type-error (error)
   ((%datum
     :initarg :datum

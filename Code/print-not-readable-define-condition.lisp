@@ -1,5 +1,7 @@
 (cl:in-package #:predicament)
 
+(defgeneric print-not-readable-object (print-not-readable))
+
 (define-condition print-not-readable (error)
   ((%object
     :initarg :object

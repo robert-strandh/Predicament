@@ -1,5 +1,9 @@
 (cl:in-package #:predicament)
 
+(defgeneric simple-condition-format-control (simple-condition))
+
+(defgeneric simple-condition-format-arguments (simple-condition))
+
 (define-condition simple-condition (condition)
   ((%format-control
     :initarg :format-control

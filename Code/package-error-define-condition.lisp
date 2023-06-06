@@ -1,5 +1,7 @@
 (cl:in-package #:predicament)
 
+(defgeneric package-error-package (package-error))
+
 (define-condition package-error (error)
   ((%package
     :initarg :package

@@ -1,5 +1,7 @@
 (cl:in-package #:predicament)
 
+(defgeneric stream-error-stream (stream-error))
+
 (define-condition stream-error (error)
   ((%stream
     :initarg :stream

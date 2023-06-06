@@ -1,5 +1,9 @@
 (cl:in-package #:predicament)
 
+(defgeneric arithmetic-error-operation (arithmetic-error))
+
+(defgeneric arithmetic-error-operands (arithmetic-error))
+
 (define-condition arithmetic-error (error)
   ((%operation
     :initarg :operation
