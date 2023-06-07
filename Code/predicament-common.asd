@@ -8,6 +8,7 @@
    (:file "restart-clusters-defparameter")
    (:file "condition-restarts-defparameter")
    (:file "restart-defclass")
+   (:file "restart-bind-defmacro")
    (:file "find-restart-defun")
    (:file "signal-defgeneric")
    (:file "error-defgeneric")

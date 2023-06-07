@@ -16,6 +16,7 @@
     #:*debugger-hook*
     #:restart
     #:restart-name
+    #:restart-bind
     #:find-restart
     #:handler-bind
     #:make-condition
