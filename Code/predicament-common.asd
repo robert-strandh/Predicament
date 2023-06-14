@@ -9,6 +9,7 @@
    (:file "condition-restarts-defparameter")
    (:file "restart-defclass")
    (:file "restart-bind-defmacro")
+   (:file "restart-case-defmacro")
    (:file "find-restart-defun")
    (:file "signal-defgeneric")
    (:file "error-defgeneric")
