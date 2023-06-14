@@ -18,6 +18,7 @@
    (:file "invoke-debugger-defun")
    (:file "handler-clusters-defparameter")
    (:file "handler-bind-defmacro")
+   (:file "ignore-errors-defmacro")
    (:file "with-simple-restart-defmacro")
    (:file "warning-define-condition")
    (:file "serious-condition-define-condition")

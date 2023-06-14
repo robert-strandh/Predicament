@@ -20,6 +20,7 @@
     #:restart-case
     #:find-restart
     #:handler-bind
+    #:ignore-errors
     #:make-condition
     #:invoke-debugger
     #:signal
