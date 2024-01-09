@@ -12,6 +12,7 @@
                    when (and (or (eq identifier restart)
                                  (eq identifier (restart-name restart)))
                              (not (member restart excluded-restarts))
-                             (funcall (test-function restart) condition))
+                             (or (null (test-function restart))
+                                 (funcall (test-function restart) condition)))
                      do (return-from find-restart restart))
           finally (return nil))))
