@@ -5,15 +5,13 @@
   (signal datum)
   (invoke-debugger datum))
 
-(defmethod error :around ((datum string) &rest arguments)
+(defmethod error ((datum string) &rest arguments)
   (error (make-condition 'simple-error
                          :format-control datum
-                         :format-arguments arguments)
-         nil))
+                         :format-arguments arguments)))
 
-(defmethod error :around ((datum symbol) &rest arguments)
-  (error (apply #'make-condition datum arguments)
-         nil))
+(defmethod error ((datum symbol) &rest arguments)
+  (error (apply #'make-condition datum arguments)))
 
 (defmethod error :before ((datum condition) &rest arguments)
   (unless (null arguments)
