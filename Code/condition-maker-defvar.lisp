@@ -2,7 +2,7 @@
 
 (defvar *condition-maker*)
 
-(setf (documentation '*default-debugger* 'variable)
+(setf (documentation '*condition-maker* 'variable)
       (format nil
               "Client code must set this variable to a function that~@
                takes the same arguments as MAKE-CONDITION, and that~@
