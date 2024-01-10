@@ -16,6 +16,7 @@
    (:file "warn-defgeneric")
    (:file "make-condition-defun")
    (:file "invoke-debugger-defun")
+   (:file "invoke-restart-defun")
    (:file "handler-clusters-defparameter")
    (:file "handler-bind-defmacro")
    (:file "ignore-errors-defmacro")
