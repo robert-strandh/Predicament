@@ -11,6 +11,7 @@
    (:file "restart-bind-defmacro")
    (:file "restart-case-defmacro")
    (:file "find-restart-defun")
+   (:file "compute-restarts-defun")
    (:file "signal-defgeneric")
    (:file "error-defgeneric")
    (:file "warn-defgeneric")
