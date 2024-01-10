@@ -24,6 +24,7 @@
     #:make-condition
     #:invoke-debugger
     #:invoke-restart
+    #:invoke-restart-interactively
     #:signal
     #:warn
     #:warning
