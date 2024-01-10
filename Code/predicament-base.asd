@@ -23,6 +23,7 @@
     #:ignore-errors
     #:make-condition
     #:invoke-debugger
+    #:invoke-restart
     #:signal
     #:warn
     #:warning
