@@ -22,8 +22,10 @@
     #:handler-bind
     #:ignore-errors
     #:make-condition
+    #:compute-restarts
     #:invoke-debugger
     #:invoke-restart
+    #:invoke-restart-interactively
     #:signal
     #:warn
     #:warning
