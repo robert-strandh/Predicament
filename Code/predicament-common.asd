@@ -54,6 +54,7 @@
    (:file "invoke-restart-interactively-defun")
    (:file "signal-defmethods")
    (:file "error-defmethods")
+   (:file "cerror-defun")
    (:file "warn-defmethods")
    (:file "abort-defun")
    (:file "muffle-warning-defun")
