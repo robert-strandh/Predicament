@@ -55,6 +55,7 @@
    (:file "signal-defmethods")
    (:file "error-defmethods")
    (:file "cerror-defun")
+   (:file "break-defun")
    (:file "warn-defmethods")
    (:file "abort-defun")
    (:file "muffle-warning-defun")
