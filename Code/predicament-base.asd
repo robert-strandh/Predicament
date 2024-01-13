@@ -31,7 +31,9 @@
     #:warning
     #:serious-condition
     #:style-warning
+    #:break
     #:error
+    #:cerror
     #:cell-error
     #:cell-error-name
     #:undefined-function
