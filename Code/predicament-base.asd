@@ -6,8 +6,7 @@
 
 (asdf:defsystem #:predicament-base
   :serial t
-  :description "Portable Condition System, base system"
-  :depends-on (#:s-expression-syntax))
+  :description "Portable Condition System, base system")
 
 (defparameter *string-designators*
   '(#:with-simple-restart
