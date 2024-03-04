@@ -17,6 +17,7 @@
     #:restart-bind
     #:restart-case
     #:find-restart
+    #:compute-restarts
     #:handler-bind
     #:ignore-errors
     #:make-condition
