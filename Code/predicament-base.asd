@@ -21,13 +21,18 @@
     #:handler-bind
     #:ignore-errors
     #:make-condition
+    #:compute-restarts
     #:invoke-debugger
+    #:invoke-restart
+    #:invoke-restart-interactively
     #:signal
     #:warn
     #:warning
     #:serious-condition
     #:style-warning
+    #:break
     #:error
+    #:cerror
     #:cell-error
     #:cell-error-name
     #:undefined-function

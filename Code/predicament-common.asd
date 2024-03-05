@@ -11,7 +11,11 @@
    (:file "restart-bind-defmacro")
    (:file "restart-case-defmacro")
    (:file "find-restart-defun")
+<<<<<<< HEAD
    (:file "compute-restarts")
+=======
+   (:file "compute-restarts-defun")
+>>>>>>> 59f45b153a2aac2b27a3b9c214ab6cc33f7ed9d0
    (:file "signal-defgeneric")
    (:file "error-defgeneric")
    (:file "warn-defgeneric")
@@ -50,8 +54,12 @@
    (:file "stream-error-define-condition")
    (:file "end-of-file-define-condition")
    (:file "control-error-define-condition")
+   (:file "invoke-restart-defun")
+   (:file "invoke-restart-interactively-defun")
    (:file "signal-defmethods")
    (:file "error-defmethods")
+   (:file "cerror-defun")
+   (:file "break-defun")
    (:file "warn-defmethods")
    (:file "abort-defun")
    (:file "muffle-warning-defun")
