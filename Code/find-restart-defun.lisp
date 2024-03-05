@@ -16,3 +16,8 @@
                                  (funcall (test-function restart) condition)))
                      do (return-from find-restart restart))
           finally (return nil))))
+
+(setf (documentation 'find-restart 'function)
+      (format nil
+              "Walks all restart clusters and returns the first~@
+               restart with the correct name and visibility status."))
