@@ -11,11 +11,7 @@
    (:file "restart-bind-defmacro")
    (:file "restart-case-defmacro")
    (:file "find-restart-defun")
-<<<<<<< HEAD
    (:file "compute-restarts")
-=======
-   (:file "compute-restarts-defun")
->>>>>>> 59f45b153a2aac2b27a3b9c214ab6cc33f7ed9d0
    (:file "signal-defgeneric")
    (:file "error-defgeneric")
    (:file "warn-defgeneric")
