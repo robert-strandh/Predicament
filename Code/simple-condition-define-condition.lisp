@@ -35,7 +35,7 @@
 
 (setf (documentation 'simple-condition-format-control 'function)
       (format nil
-              "Syntax simple-condition-format-control simple-condition~@
+              "Syntax: simple-condition-format-control simple-condition~@
                ~@
                This function returns the information supplied by the~@
                initarg :FORMAT-CONTROL to MAKE-CONDITION when the condition~@
@@ -43,7 +43,7 @@
 
 (setf (documentation 'simple-condition-format-arguments 'function)
       (format nil
-              "Syntax simple-condition-format-arguments simple-condition~@
+              "Syntax: simple-condition-format-arguments simple-condition~@
                ~@
                This function returns the information supplied by the~@
                initarg :FORMAT-ARGUMENTS to MAKE-CONDITION when the condition~@
