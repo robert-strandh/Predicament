@@ -1,21 +1,19 @@
 (cl:in-package #:predicament)
 
-(defun associated-conditions (restart)
-  (cdr (assoc restart *condition-restarts*)))
-
-(defun restart-visible-p (restart condition)
-  (and (funcall (test-function restart) condition)
-       (or (null condition)
-           (let ((associated-conditions (associated-conditions restart)))
-             (or (null associated-conditions)
-                 (member condition associated-conditions))))))
-
-(defgeneric compute-restarts (&optional condition))
-
-(defmethod compute-restarts (&optional condition)
-  (loop for restart in (apply #'append *restart-clusters*)
-        when (restart-visible-p restart condition)
-          collect restart))
+(defun compute-restarts (&optional condition)
+  (let ((excluded-restarts
+          (if (null condition)
+              '()
+              (loop for (restart . conditions) in *condition-restarts*
+                    unless (member condition conditions)
+                      collect restart))))
+    (loop :for cluster :in *restart-clusters*
+          :append (loop :for restart :in cluster
+                        :when (and (or (null (test-function restart))
+                                       (funcall (test-function restart)
+                                                condition))
+                                   (not (member restart excluded-restarts)))
+                          :collect restart))))
 
 (setf (documentation 'compute-restarts 'function)
       (format nil
