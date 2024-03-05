@@ -10,9 +10,6 @@
              (or (null associated-conditions)
                  (member condition associated-conditions))))))
 
-;;; FIXME: Since CONDITION is optional, we can't really call
-;;; RESTART-VISIBLE-P when the argument is not given.
-
 (defgeneric compute-restarts (&optional condition))
 
 (defmethod compute-restarts (&optional condition)
