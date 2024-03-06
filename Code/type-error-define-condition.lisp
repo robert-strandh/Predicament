@@ -27,4 +27,11 @@
                ~@
                An instance of this class is signaled when an object~@
                of a certain type was expected, but an object not of~@
-               the expectec type was supplied instead."))
+               the expectec type was supplied instead.~@
+               ~@
+               The value of the initialization argument :DATUM should~@
+               be the object that was not of the expected type.  The~@
+               value of the initialization argument :EXPECTED-TYPE~@
+               should be a type specifier that describes, as accurately~@
+               as possible, the expected type of the object."))
+
