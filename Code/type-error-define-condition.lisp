@@ -35,3 +35,19 @@
                should be a type specifier that describes, as accurately~@
                as possible, the expected type of the object."))
 
+(setf (documentation 'type-error-datum 'function)
+      (format nil
+              "Syntax: type-error-datum type-error~@
+               ~@
+               Given a condition of type TYPE-ERROR, this function~@
+               returns the offending datum as supplied by the :DATUM~@
+               initialization argument when the condition was created."))
+
+(setf (documentation 'type-error-expected-type 'function)
+      (format nil
+              "Syntax: type-error-expected-type type-error~@
+               ~@
+               Given a condition of type TYPE-ERROR, this function~@
+               returns the type specifier for the expected type as~@
+               supplied by the :EXPECTED-TYPE initialization argument~@
+               when the condition was created."))
