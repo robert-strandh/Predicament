@@ -33,3 +33,31 @@
          :expected-type '(or condition symbol function string)
          :format-control "~S is not coercable to a condition."
          :format-arguments (list datum)))
+
+(setf (documentation 'coerce-to-condition 'function)
+      (format nil
+              "Syntax: coerce-to-condition datum arguments default-type name~@
+               ~@
+               This function attempts to coerce the provided arguments~@
+               into a condition object. The DEFAULT-TYPE argument~@
+               describes the default condition type that should be~@
+               created if no condition type can be inferred from DATUM;~@
+               the NAME argument is the name of the coercing operator~@
+               and is used during invalid coercions to properly report~@
+               the error.~@
+               ~@
+               When the value of DATUM is a condition, this function~@
+               returns DATUM, provided that the value of ARGUMENTS is NIL.~@
+               If the value is of ARGUMENTS is not NIL, then this function~@
+               signals a coninuable error.~@
+               ~@
+               When the value of DATUM is a symbol, this function calls~@
+               MAKE-CONDITION with DATUM and ARGUMENTS.~@
+               ~@
+               When the value of DATUM is a string, this function creates~@
+               a SIMPLE-CONDTION of DEFAULT-TYPE using DATUM as the~@
+               format control, and ARGUMENT as the format arguments.~@
+               ~@
+               When DATUM is neither a condition, a symbol, nor a string,~@
+               this function signals an error indicating that the supplied~@
+               DATUM cannot be coerced to a condition object."))
