@@ -2,7 +2,8 @@
 
 (defun restart-bind-transform-binding (binding)
   (destructuring-bind (name function . arguments) binding
-    `(make-restart :name ',name :function ,function ,@arguments)))
+    `(make-instance 'restart
+       :name ',name :action ,function ,@arguments)))
 
 (defmacro restart-bind (bindings &body body)
   (let ((cluster (mapcar #'restart-bind-transform-binding bindings)))
