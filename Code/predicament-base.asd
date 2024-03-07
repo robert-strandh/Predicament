@@ -74,4 +74,5 @@
     #:muffle-warning
     #:continue
     #:store-value
-    #:use-value))
+    #:use-value
+    #:assert))
