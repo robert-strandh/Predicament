@@ -62,4 +62,5 @@
    (:file "muffle-warning-defun")
    (:file "continue-defun")
    (:file "store-value-defun")
-   (:file "use-value-defun")))
+   (:file "use-value-defun")
+   (:file "assert")))
