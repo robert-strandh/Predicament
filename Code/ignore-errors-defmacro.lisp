@@ -2,7 +2,7 @@
 
 (defmacro ignore-errors (&rest forms)
   `(handler-case (progn ,@forms)
-     (error (condition (values nil condition)))))
+     (error (condition) (values nil condition))))
 
 (setf (documentation 'ignore-errors 'function)
       (format nil
