@@ -22,6 +22,7 @@
    (:file "handler-bind-defmacro")
    (:file "ignore-errors-defmacro")
    (:file "with-simple-restart-defmacro")
+   (:file "with-condition-restarts")
    (:file "warning-define-condition")
    (:file "serious-condition-define-condition")
    (:file "style-warning-define-condition")
