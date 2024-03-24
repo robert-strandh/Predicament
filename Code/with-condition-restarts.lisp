@@ -17,3 +17,13 @@
                       collect (cons restart
                                     (cons ,c-variable conditions))))))
          ,@body))))
+
+(setf (documentation 'with-condition-restarts 'function)
+      (format nil
+              "Syntax: with-condition-restarts c-form r-form &body body~@
+               ~@
+               First C-FORM is evaluated to produce a condition.  Then~@
+               R-FORM is evaluated to produce a list of restarts.~@
+               Finally, the forms in BODY (an implicit PROGN) are~@
+               evaluated in a dynamic environment in which each restart~@
+               in the list of restarts is associated with the condition."))
