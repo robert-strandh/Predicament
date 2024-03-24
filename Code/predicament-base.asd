@@ -10,6 +10,7 @@
 
 (defparameter *string-designators*
   '(#:with-simple-restart
+    #:with-condition-restarts
     #:*break-on-signals*
     #:*debugger-hook*
     #:restart
