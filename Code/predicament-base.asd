@@ -34,6 +34,7 @@
     #:break
     #:error
     #:cerror
+    #:invalid-method-error
     #:cell-error
     #:cell-error-name
     #:undefined-function
