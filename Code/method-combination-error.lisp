@@ -10,3 +10,10 @@
 
 (defun method-combination-error (format-control &rest arguments)
   (apply #'error format-control arguments))
+
+(setf (documentation 'method-combination-error 'function)
+      (format nil
+              "Syntax: method-combination-error format-control  &rest arguments~@
+               ~@
+               This function calls ERROR, supplying FORMAT-CONTROL and~@
+               ARGUMENTS as arguments."))
