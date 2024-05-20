@@ -20,3 +20,13 @@
          :offending-method method
          :format-control format-control
          :arguments arguments))
+
+(setf (documentation 'invalid-method-error 'function)
+      (format nil
+              "Syntax: invalid-method-error method format-control &rest arguments~@
+               ~@
+               This function signals an error of type~@
+               PREDICAMENT:INVALID-METHOD-CONDITION.  METHOD is the~@
+               offending method.  FORMAT-CONTROL and ARGUMENTS together~@
+               make up part of the error message of the error being~@
+               signaled."))
