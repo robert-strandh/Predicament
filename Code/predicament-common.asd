@@ -58,6 +58,7 @@
    (:file "error-defmethods")
    (:file "cerror-defun")
    (:file "invalid-method-error")
+   (:file "method-combination-error")
    (:file "break-defun")
    (:file "warn-defmethods")
    (:file "abort-defun")
