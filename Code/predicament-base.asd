@@ -35,6 +35,7 @@
     #:error
     #:cerror
     #:invalid-method-error
+    #:method-combination-error
     #:cell-error
     #:cell-error-name
     #:undefined-function
