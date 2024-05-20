@@ -57,6 +57,7 @@
    (:file "signal-defmethods")
    (:file "error-defmethods")
    (:file "cerror-defun")
+   (:file "invalid-method-error")
    (:file "break-defun")
    (:file "warn-defmethods")
    (:file "abort-defun")
