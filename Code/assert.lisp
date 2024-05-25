@@ -38,3 +38,37 @@
                           (assert-restart-report ',places stream))
                 ,@(mapcar #'make-place-setter places)
                 (go ,tag))))))))
+
+;;; FIXME: write some more.
+(setf (documentation 'assert 'function)
+      (format nil
+              "Syntax: assert test-form [({place}*) [datum-form {argument-form}*]]~@
+               ~@
+               TEST-FORM is a form that is always evaluated.  TEST-FORM~@
+               is the only required argument.  Each PLACE is a place, and~@
+               it is evaluated if and only if an error is signaled.~@
+               DATUM-FORM is a form that evaluates to some datum.  It is~@
+               evaluated each time an error is to be signaled, or not at~@
+               all if no error is to be signaled.  Each ARGUMENT-FORM is~@
+               a form that evaluates to some argument, and it is evaluated~@
+               each time an error is to be signaled, or not at all if~@
+               no error is to be signaled.~@
+               ~@
+               The datum resulting from the evaluation of DATUM-FORM~@
+               and the arguments resulting from the evaluation of each~@
+               ARGUMENT-FORM are together the designators for a condition~@
+               of default type ERROR.~@
+               ~@
+               This macro assures that TEST-FORM evaluates to true.  In~@
+               that case, ASSERT returns NIL.  If TEST-FORM evaluates~@
+               to false, this macro signals a correctable error designated~@
+               by the datum resluting from the evaluation of DATUM-FORM and~@
+               the arguments resulting from the evaluation of each~@
+               ARGUMENT-FORM.  In that case, invoking the CONTINUE restart~@
+               lets the user alter the values of the places resulting from~@
+               the evaluation of each PLACE, before TEST-FORM is evaluated~@
+               again, and the action is repeated."))
+
+
+               
+               
