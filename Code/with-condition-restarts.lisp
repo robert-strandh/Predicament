@@ -9,7 +9,7 @@
                (append
                 (loop with cr = *condition-restarts*
                       for entry in cr
-                      unless (member (car entry ,r-variable) :test #'eq)
+                      unless (member (car entry) ,r-variable :test #'eq)
                         collect entry)
                 (loop with cr = *condition-restarts*
                       for restart in ,r-variable
