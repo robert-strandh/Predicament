@@ -13,7 +13,7 @@
 
 (setf (documentation 'file-error 'type)
       (format nil
-              "Class precedence list:
+              "Class precedence list:~@
                file-error, error, serious-condition, condition, t~@
                ~@
                An instance of this condition class is signaled as~@
