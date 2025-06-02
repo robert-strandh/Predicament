@@ -12,7 +12,7 @@
 (setf (documentation 'undefined-function 'type)
       (format nil
               "Class precedece list:~@
-               undefined-function, cell-error, serious-condition, condition, t~@
+               undefined-function, cell-error, error, serious-condition, condition, t~@
                ~@
                An instance of this class can be used to represent~@
                the error condition consisting of an attempt to access~@
